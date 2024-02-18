@@ -1,0 +1,97 @@
+#include <stdio.h>
+
+/*
+int main(void){
+  int nombre1,nombre2;
+  printf("Saisir un nombre :");
+  scanf("%d", &nombre1);
+  printf("Saisir un nombre :");
+  scanf("%d", &nombre2);
+  printf("La somm est : %d et le produit : %d", nombre1+nombre2, nombre1+nombre2);
+  return 0;
+}
+
+int main(void){
+  int somme=0;
+  int val;
+  printf("Saisir un entier : ");
+  fflush(stdout);
+  scanf("%d", &val);
+  while (val>=0){
+    somme+=val;
+    printf("Saisir un autre entier : ");
+    fflush(stdout);
+    scanf("%d", &val);
+  }
+  printf("Somme des valeurs positives saisies correspond à %d.",somme);
+  return 0;
+}
+
+int main(void){
+  int entier;
+  printf("Saisir un entier : ");
+  scanf("%d", &entier);
+  entier = entier*entier;
+  printf("Votre entier au carré est %d.", entier);
+  return 0;
+}
+
+int main(void){
+  int entier;
+  printf("Saisir un entier : ");
+  scanf("%d", &entier);
+  entier = sqrt(entier);
+  printf("La racine est %d.", entier);
+  return 0;
+}
+
+int main(void){
+  int a;
+  int b;
+  int c;
+  printf("Saisir la valeur de a : ");
+  scanf("%d", &a);
+  printf("Saisir la valeur de b : ");
+  scanf("%d", &b);
+  c=b;
+  b=a;
+  a=c;
+  printf("La permutation, a vaut %d et b vaut %d.", a,b);
+  return 0;
+}
+
+int main(void){
+  int val, plus_grand, plus_petit;
+  printf("Saisir une valeur : ");
+  scanf("%d", &val);
+  plus_grand = val;
+  plus_petit = val;
+
+  for (int i=0; i<4; i++){
+    int val2;
+    printf("Saisir une valeur : ");
+    scanf("%d", &val2);
+    if (val2>=plus_grand){
+      plus_grand = val2;
+    }
+    if (val2<=plus_petit){
+      plus_petit = val2;
+    }
+  }
+  printf("Valeur plus grande %d et plus petite %d", plus_grand, plus_petit);
+  return 0;
+}
+
+int main(void){
+  int annee;
+  printf("Saisir année : ");
+  scanf("%d", &annee);
+  if ((annee/4)%2 == 0 || (annee/400)%2 == 0){
+    printf("est bixestille");
+  }
+  else{
+    printf("n'est pas bixestille");
+  }
+  return 0;
+}
+*/
