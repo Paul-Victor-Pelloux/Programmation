@@ -1,0 +1,41 @@
+def palindrome(n):
+	if n<=9 and n>=0:return True
+	else:
+		while not(n==0):
+			var1=n
+			while not(var1<=9):
+				var1//=10
+			if var1!=n%10:return False
+			else:
+				if var1==n%10:
+					nb=0
+					while not(n<=9):
+						nb+=n%10
+						nb*=10
+						n//=10
+					nb//10
+					n//=10
+					n=0
+					while not(nb==0):
+						n+=nb%10
+						n*=10
+						nb//=10
+					n//=10
+					n//=10
+		return True
+
+def supprime_avant_dernier_chiffre_du_nombre(n):
+	assert n>9, 'Vérifie que c'est un nombre !'
+	n2=n%10
+	n//=10
+	n//=10
+	while not(n==0):
+		n2*=10
+		n2+=n%10
+		n//=10
+	while not(n2==0):
+		n+=n2%10
+		n*=10
+		n2//=10
+	n//=10
+	return n
