@@ -95,3 +95,53 @@ int main(void){
   return 0;
 }
 */
+
+//Exercice 2 TP3 Progc - Faut terminer
+
+#include <stdio.h>
+#define TAILLE_MAX 10
+
+int main(void){
+  int ordre;
+  int i=0;
+  int compteur=1;
+  int j=0;
+  int nb;
+  //initialisation tableau:
+  int matrice[TAILLE_MAX][TAILLE_MAX];
+
+  printf("Ordre de la matrice : ");
+  scanf("%d", &ordre);
+  //vérifie ordre<=10
+  if (ordre>10){
+    while (ordre>10){
+      printf("Ordre de la matrice : ");
+      scanf("%d", &ordre);
+    }
+  }
+  printf("\n");
+
+  while (i<ordre){
+    printf("Ligne %d : \n", compteur);
+    compteur++;
+    while (j<ordre){
+      scanf("%d", &nb);
+      j++;
+      //matrice prend le nombre
+      matrice[i][j]=nb;
+    }
+    i++;
+  }
+
+  //vérifie symétrice matrice
+  for (int a; ;a++){
+    for (int b; ;b++){
+      if (/* condition */) {
+        print("La matrice n'est pas symétrique");
+      }
+      printf("Cette matrice est symétrique")
+    }
+  }
+
+  return 0;
+}
