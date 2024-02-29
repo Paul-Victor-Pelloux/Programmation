@@ -113,11 +113,9 @@ int main(void){
   printf("Ordre de la matrice : ");
   scanf("%d", &ordre);
   //vérifie ordre<=10
-  if (ordre>10){
-    while (ordre>10){
-      printf("Ordre de la matrice : ");
-      scanf("%d", &ordre);
-    }
+  while (ordre>10){
+    printf("Ordre de la matrice : ");
+    scanf("%d", &ordre);
   }
   printf("\n");
 
@@ -133,10 +131,10 @@ int main(void){
     i++;
   }
 
-  //vérifie symétrice matrice
-  for (int a; ;a++){
-    for (int b; ;b++){
-      if (/* condition */) {
+  //vérifie symétrie matrice
+  for (int a; a<ordre ;a++){
+    for (int b; b<ordre) ;b++){
+      if (matrice[a][b]!=matrice[b][a]) {
         print("La matrice n'est pas symétrique");
       }
       printf("Cette matrice est symétrique")
@@ -145,3 +143,4 @@ int main(void){
 
   return 0;
 }
+
