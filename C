@@ -47,7 +47,6 @@ int main(void){
   int nb;
   //initialisation tableau:
   int matrice[TAILLE_MAX][TAILLE_MAX];
-
   printf("Ordre de la matrice : ");
   scanf("%d", &ordre);
   //vérifie ordre<=10
@@ -56,7 +55,6 @@ int main(void){
     scanf("%d", &ordre);
   }
   printf("\n");
-
   while (i<ordre){
     printf("Ligne %d : \n", compteur);
     compteur++;
@@ -68,7 +66,6 @@ int main(void){
     }
     i++;
   }
-
   //vérifie symétrie matrice
   for (int a; a<ordre ;a++){
     for (int b; b<ordre) ;b++){
@@ -78,7 +75,6 @@ int main(void){
       printf("Cette matrice est symétrique")
     }
   }
-
   return 0;
 }
 
