@@ -31,9 +31,15 @@ int main(void){
   //vérifie symétrie matrice
   for (int a=0; a<ordre; a++){
     for (int b=0; b<ordre; b++){
-      if ((matrice[a][b]) == (matrice[b][a])) {
-        printf("La matrice est symétrique");
+      if ((matrice[a][b]) != (matrice[b][a])) {
+        printf("La matrice n'est pas symétrique");
       }
+    }
+  }
+  //vérifie le dernier, et si tout passe alors bon
+  if ((a == ordre) && (b == ordre)) {
+    if ((matrice[a][b]) != (matrice[b][a])) {
+      printf("La matrice est symétrique");
     }
   }
   return 0;
