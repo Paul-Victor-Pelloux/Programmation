@@ -1,49 +1,11 @@
 #include <stdio.h>
-#define TAILLE_MAX 10
-
-int main(void){
-  int somme=0;
-  int val;
-  printf("Saisir un entier : ");
-  fflush(stdout);
-  scanf("%d", &val);
-  while (val>=0){
-    somme+=val;
-    printf("Saisir un autre entier : ");
-    fflush(stdout);
-    scanf("%d", &val);
-  }
-  printf("Somme des valeurs positives saisies correspond à %d.",somme);
-  return 0;
-}
-
-int main(void){
-  int val, plus_grand, plus_petit;
-  printf("Saisir une valeur : ");
-  scanf("%d", &val);
-  plus_grand = val;
-  plus_petit = val;
-
-  for (int i=0; i<4; i++){
-    int val2;
-    printf("Saisir une valeur : ");
-    scanf("%d", &val2);
-    if (val2>=plus_grand){
-      plus_grand = val2;
-    }
-    if (val2<=plus_petit){
-      plus_petit = val2;
-    }
-  }
-  printf("Valeur plus grande %d et plus petite %d", plus_grand, plus_petit);
-  return 0;
-}
+#define TAILLE_MAX 100
 
 int main(void){
   int ordre;
   int i=0;
   int compteur=1;
-  int j=0;
+  int j;
   int nb;
   //initialisation tableau:
   int matrice[TAILLE_MAX][TAILLE_MAX];
@@ -54,10 +16,10 @@ int main(void){
     printf("Ordre de la matrice : ");
     scanf("%d", &ordre);
   }
-  printf("\n");
-  while (i<ordre){
+  while (i!=ordre){
     printf("Ligne %d : \n", compteur);
     compteur++;
+    j=0;
     while (j<ordre){
       scanf("%d", &nb);
       j++;
@@ -67,14 +29,12 @@ int main(void){
     i++;
   }
   //vérifie symétrie matrice
-  for (int a; a<ordre ;a++){
-    for (int b; b<ordre) ;b++){
-      if (matrice[a][b]!=matrice[b][a]) {
-        print("La matrice n'est pas symétrique");
+  for (int a=0; a<ordre; a++){
+    for (int b=0; b<ordre; b++){
+      if ((matrice[a][b]) == (matrice[b][a])) {
+        printf("La matrice est symétrique");
       }
-      printf("Cette matrice est symétrique")
     }
   }
   return 0;
 }
-
