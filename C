@@ -1,15 +1,5 @@
 #include <stdio.h>
-
-/*
-int main(void){
-  int nombre1,nombre2;
-  printf("Saisir un nombre :");
-  scanf("%d", &nombre1);
-  printf("Saisir un nombre :");
-  scanf("%d", &nombre2);
-  printf("La somm est : %d et le produit : %d", nombre1+nombre2, nombre1+nombre2);
-  return 0;
-}
+#define TAILLE_MAX 10
 
 int main(void){
   int somme=0;
@@ -24,39 +14,6 @@ int main(void){
     scanf("%d", &val);
   }
   printf("Somme des valeurs positives saisies correspond à %d.",somme);
-  return 0;
-}
-
-int main(void){
-  int entier;
-  printf("Saisir un entier : ");
-  scanf("%d", &entier);
-  entier = entier*entier;
-  printf("Votre entier au carré est %d.", entier);
-  return 0;
-}
-
-int main(void){
-  int entier;
-  printf("Saisir un entier : ");
-  scanf("%d", &entier);
-  entier = sqrt(entier);
-  printf("La racine est %d.", entier);
-  return 0;
-}
-
-int main(void){
-  int a;
-  int b;
-  int c;
-  printf("Saisir la valeur de a : ");
-  scanf("%d", &a);
-  printf("Saisir la valeur de b : ");
-  scanf("%d", &b);
-  c=b;
-  b=a;
-  a=c;
-  printf("La permutation, a vaut %d et b vaut %d.", a,b);
   return 0;
 }
 
@@ -81,25 +38,6 @@ int main(void){
   printf("Valeur plus grande %d et plus petite %d", plus_grand, plus_petit);
   return 0;
 }
-
-int main(void){
-  int annee;
-  printf("Saisir année : ");
-  scanf("%d", &annee);
-  if ((annee/4)%2 == 0 || (annee/400)%2 == 0){
-    printf("est bixestille");
-  }
-  else{
-    printf("n'est pas bixestille");
-  }
-  return 0;
-}
-*/
-
-//Exercice 2 TP3 Progc - Faut terminer
-
-#include <stdio.h>
-#define TAILLE_MAX 10
 
 int main(void){
   int ordre;
